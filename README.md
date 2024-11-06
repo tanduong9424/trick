@@ -4,6 +4,11 @@ Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https
 Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
 Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
 ```
+systemctl stop firewalld
+systemctl disable firewalld
+```
+
+```
 # CentOS-Base.repo
 #
 # The mirror system uses the connecting IP address of the client and the
