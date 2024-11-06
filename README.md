@@ -4,11 +4,16 @@ Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https
 Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
 Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
 ```
+---------------------------------------------------------------------------------------------
 systemctl stop firewalld
 systemctl disable firewalld
+---------------------------------------------------------------------------------------------
 ```
 ```gedit /etc/selinux/config```
 ```SELINUX=enforcing``` ->  ```SELINUX=disabled```
+```sudo reboot```
+
+---------------------------------------------------------------------------------------------
 
 ```
 # CentOS-Base.repo
