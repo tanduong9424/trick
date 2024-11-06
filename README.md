@@ -3,16 +3,14 @@ Uncomment các dòng bắt đầu bằng #baseurl -> baseurl
 Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https://vault.centos.org````
 Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
 Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
-```
 
 ---------------------------------------------------------------------------------------------
-
+```
 systemctl stop firewalld
 systemctl disable firewalld
-
+```
 ---------------------------------------------------------------------------------------------
 
-```
 ```gedit /etc/selinux/config```
 ```SELINUX=enforcing``` ->  ```SELINUX=disabled```
 ```sudo reboot```
