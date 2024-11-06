@@ -7,6 +7,8 @@ Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
 systemctl stop firewalld
 systemctl disable firewalld
 ```
+```gedit /etc/selinux/config```
+```SELINUX=enforcing``` ->  ```SELINUX=disabled```
 
 ```
 # CentOS-Base.repo
