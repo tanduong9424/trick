@@ -62,3 +62,15 @@ gpgcheck=1
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
+cách mount share folder giữa máy thật và ảo
+```vmware-hgfsclient```
+
+```sudo vmhgfs-fuse .host:/shareCetOS /home/node2/Desktop/sharefolderWin -o allow_other -o uid=1000```
+
+```cd /home/node2/Desktop/sharefolderWin```
+```ls -la```
+
+```gedit /etc/fstab```
+thêm dòng sau vào
+```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
+
