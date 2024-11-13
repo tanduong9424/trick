@@ -1,3 +1,5 @@
+```sudo lsof -i :80```
+--------------------------------------------------------------------------------------------
 ```gedit /etc/yum.repos.d/CentOS-Base.repo```
 Uncomment các dòng bắt đầu bằng #baseurl -> baseurl
 Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https://vault.centos.org````
