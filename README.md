@@ -34,35 +34,36 @@ systemctl disable firewalld
 
 [base]
 name=CentOS-$releasever - Base
-mirrorlist=https://vault.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
-baseurl=https://vault.centos.org/centos/$releasever/os/$basearch/
+mirrorlist=http://vault.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+baseurl=http://vault.centos.org/centos/$releasever/os/$basearch/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
 #released updates 
 [updates]
 name=CentOS-$releasever - Updates
-mirrorlist=https://vault.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
-baseurl=https://vault.centos.org/centos/$releasever/updates/$basearch/
+mirrorlist=http://vault.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+baseurl=http://vault.centos.org/centos/$releasever/updates/$basearch/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
 #additional packages that may be useful
 [extras]
 name=CentOS-$releasever - Extras
-mirrorlist=https://vault.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
-baseurl=https://vault.centos.org/centos/$releasever/extras/$basearch/
+mirrorlist=http://vault.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+baseurl=http://vault.centos.org/centos/$releasever/extras/$basearch/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
 #additional packages that extend functionality of existing packages
 [centosplus]
 name=CentOS-$releasever - Plus
-mirrorlist=https://vault.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
-baseurl=https://vault.centos.org/centos/$releasever/centosplus/$basearch/
+mirrorlist=http://vault.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
+baseurl=http://vault.centos.org/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
 ```
 cách mount share folder giữa máy thật và ảo
 ```vmware-hgfsclient```
