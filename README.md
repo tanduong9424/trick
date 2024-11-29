@@ -74,7 +74,7 @@ cách mount share folder giữa máy thật và ảo
 ```ls -la```
 
 ```gedit /etc/fstab```
-thêm dòng sau vào
+thêm dòng sau vào sau
 ```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
-siuuuuuuuuuuu
+siuuhuhuhhuuuuuuuuuu
 
