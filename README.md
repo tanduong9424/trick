@@ -78,3 +78,5 @@ thêm dòng sau vào sau
 ```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
 
 
+ví dụ giờ tui sửa code đi nha, nó hiện chữ M in hoa màu xanh nghĩa là file đã thay đổi, còn chữ U màu xanh lục là tạo mới thì phải rồi giờ push lên kiểu
+cái này là commit ấy 
