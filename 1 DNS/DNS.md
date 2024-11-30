@@ -27,6 +27,28 @@ sudo systemctl enable dnsmasq
 
 /var/named/reverse.192.168.1.0
 
+
+
+```
+$TTL 1d
+@    IN    SOA    ns1.1google.com. root.1google.com. (
+        2024091801  ; Serial
+        604800      ; Refresh
+        7200        ; Retry
+        2419200     ; Expire
+        86400       ; Minimum TTL
+);
+@    IN  NS    ns1.1google.com.
+2    IN  PTR   1google.com.
+2    IN  PTR   1youtube.com
+2    IN  PTR   1facebook.com
+2    IN  PTR   1tuilanumberone.com
+
+2    IN  PTR   ns1.1google.com.
+2    IN  PTR   ns1.1youtube.com
+2    IN  PTR   ns1.1facebook.com
+2    IN  PTR   ns1.1tuilanumberone.com
+```
 sudo named-checkzone sgu.edu.vn /var/named/HuynhTanDuong.edu.vn.zone
 ```
 
