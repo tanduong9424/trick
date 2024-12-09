@@ -41,3 +41,22 @@ chmod +x /var/www/html/sgu.edu.vn/index.html
 systemctl enable httpd
 systemctl start httpd
 systemctl restart httpd
+
+
+cấu hình file index khác vị trí mặc định /var/...
+```
+	<VirtualHost *:80>
+	    ServerAdmin dhuynh529@gmail.com
+	    DocumentRoot /home/FTP/facebook.com
+	    ServerName 1facebook.com
+	    ServerAlias ns1.1facebook.com
+	
+	    <Directory /home/FTP/facebook.com>
+	        Options Indexes FollowSymLinks
+	        AllowOverride All
+	        Require all granted
+	    </Directory>
+	</VirtualHost>
+```
+``` sudo chown -R apache:apache /home/FTP/facebook.com```
+``` sudo chmod -R 755 /home/FTP/facebook.com```
