@@ -1,0 +1,1 @@
+If upload gets stuck via VM, upload to quemu folder via ftp.
