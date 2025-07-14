@@ -1,12 +1,10 @@
-```sudo lsof -i :80```
---------------------------------------------------------------------------------------------
+Cấu hình lại để update, cài đặt các gói cần thiết
 ```gedit /etc/yum.repos.d/CentOS-Base.repo```
-Uncomment các dòng bắt đầu bằng #baseurl -> baseurl
-Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https://vault.centos.org````
-Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
-Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
+* Uncomment các dòng bắt đầu bằng #baseurl -> baseurl
+* Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https://vault.centos.org````
+* Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
+*Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
 
----------------------------------------------------------------------------------------------
 ```
 systemctl stop firewalld
 systemctl disable firewalld
@@ -76,4 +74,6 @@ cách mount share folder giữa máy thật và ảo
 ```gedit /etc/fstab```
 thêm dòng sau vào
 ```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
+
+```sudo lsof -i :80```
 
