@@ -77,7 +77,7 @@ Mount share folder giữa máy thật và ảo
 
 ```gedit /etc/fstab```
 
-<img src=https://octodex.github.com//images/nyantocat.gif alt=celebrate width=300 align=right>
+<video src=https://octodex.github.com//images/nyantocat.gif alt=celebrate width=300 align=right>
 
 thêm dòng sau vào
 ```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
