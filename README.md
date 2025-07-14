@@ -3,20 +3,9 @@ Cấu hình lại để update, cài đặt các gói cần thiết
 * Uncomment các dòng bắt đầu bằng #baseurl -> baseurl
 * Thay đổi đường dẫn từ ```http://mirrorlist.centos.org``` -> ````https://vault.centos.org````
 * Thay đổi đường dẫn từ ```http://mirror.centos.org``` -> ```https://vault.centos.org```
-*Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
-
-```
-systemctl stop firewalld
-systemctl disable firewalld
-```
----------------------------------------------------------------------------------------------
-
-```gedit /etc/selinux/config```
-```SELINUX=enforcing``` ->  ```SELINUX=disabled```
-```sudo reboot```
-
----------------------------------------------------------------------------------------------
-
+* Update lại gói yum bằng ```yum update -y``` và tiến hành reboot
+* Hoặc đơn giản hơn là xóa toàn bộ nội dung trong ``/etc/yum.repos.d/CentOS-Base.repo`` và copy nội dung dưới **save** và ``yum update -y``
+  
 ```
 # CentOS-Base.repo
 #
@@ -63,6 +52,20 @@ enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
 ```
+
+---------------------------------------------------------------------------------------------
+```
+systemctl stop firewalld
+systemctl disable firewalld
+```
+---------------------------------------------------------------------------------------------
+
+```gedit /etc/selinux/config```
+```SELINUX=enforcing``` ->  ```SELINUX=disabled```
+```sudo reboot```
+
+---------------------------------------------------------------------------------------------
+
 cách mount share folder giữa máy thật và ảo
 ```vmware-hgfsclient```
 
