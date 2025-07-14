@@ -22,8 +22,10 @@ nano /etc/httpd/conf.d/htd.edu.vn.conf
 	ServerName htd.edu.vn.vn
 	ServerAlias fit.edu.vn.vn
 </VirtualHost>
+```
 
 nano /etc/httpd/conf.d/sgu.edu.vn.conf
+```
 <VirtualHost *:80>
 	ServerAdmin webmaster@sgu.edu.vn
 	DocumentRoot /var/www/html/sgu.edu.vn
