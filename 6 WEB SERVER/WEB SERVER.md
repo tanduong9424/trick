@@ -1,11 +1,11 @@
-/var/named/htd.edu.vn.zone
-/var/named/sgu.edu.vn.zone
-mkdir -p /var/www/html/htd.edu.vn
-mkdir -p /var/www/html/sgu.edu.vn
-chown -R apache:apache /var/www/html/htd.edu.vn
-chown -R apache:apache /var/www/html/sgu.edu.vn
-chmod 755 /var/www
-chmod 755 /var/www/html
+* /var/named/htd.edu.vn.zone
+* /var/named/sgu.edu.vn.zone
+* mkdir -p /var/www/html/htd.edu.vn
+* mkdir -p /var/www/html/sgu.edu.vn
+* chown -R apache:apache /var/www/html/htd.edu.vn
+* chown -R apache:apache /var/www/html/sgu.edu.vn
+* chmod 755 /var/www
+* chmod 755 /var/www/html
 
 nano /etc/httpd/conf/httpd.conf
 thêm vào 
