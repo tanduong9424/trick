@@ -54,19 +54,20 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
 
 ---------------------------------------------------------------------------------------------
+Tắt tường lửa
 ```
 systemctl stop firewalld
 systemctl disable firewalld
 ```
 ---------------------------------------------------------------------------------------------
+Tắt SeLinux
 
 ```gedit /etc/selinux/config```
 ```SELINUX=enforcing``` ->  ```SELINUX=disabled```
 ```sudo reboot```
 
 ---------------------------------------------------------------------------------------------
-
-cách mount share folder giữa máy thật và ảo
+Mount share folder giữa máy thật và ảo
 ```vmware-hgfsclient```
 
 ```sudo vmhgfs-fuse .host:/shareCetOS /home/node2/Desktop/sharefolderWin -o allow_other -o uid=1000```
@@ -75,6 +76,7 @@ cách mount share folder giữa máy thật và ảo
 ```ls -la```
 
 ```gedit /etc/fstab```
+
 thêm dòng sau vào
 ```.host:/shareCetOS   /home/node1/Desktop/sharefolderWin    fuse.vmhgfs-fuse    defaults,allow_other,uid=1000     0    0```
 
