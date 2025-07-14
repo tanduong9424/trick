@@ -34,15 +34,15 @@ nano /etc/httpd/conf.d/sgu.edu.vn.conf
 </VirtualHost>
 ```
 
-nano /var/www/html/htd.edu.vn/index.html
-nano /var/www/html/sgu.edu.vn/index.html
+* nano /var/www/html/htd.edu.vn/index.html
+* nano /var/www/html/sgu.edu.vn/index.html
 
-chmod +x /var/www/html/htd.edu.vn/index.html
-chmod +x /var/www/html/sgu.edu.vn/index.html
+* chmod +x /var/www/html/htd.edu.vn/index.html
+* chmod +x /var/www/html/sgu.edu.vn/index.html
 
-systemctl enable httpd
-systemctl start httpd
-systemctl restart httpd
+* systemctl enable httpd
+* systemctl start httpd
+* systemctl restart httpd
 
 
 cấu hình file index khác vị trí mặc định /var/...
@@ -60,5 +60,5 @@ cấu hình file index khác vị trí mặc định /var/...
 	    </Directory>
 	</VirtualHost>
 ```
-``` sudo chown -R apache:apache /home/FTP/facebook.com```
-``` sudo chmod -R 755 /home/FTP/facebook.com```
+* sudo chown -R apache:apache /home/FTP/facebook.com
+* sudo chmod -R 755 /home/FTP/facebook.com
